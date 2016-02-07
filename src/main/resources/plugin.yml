@@ -1,0 +1,21 @@
+name: AdminTools
+main: net.spacegeek224.AdminTools.Main
+version: 0.0.5
+author: spacegeek224
+commands:
+  help:
+    description: Get help
+    usage: /help [topic]
+    permission: shn.help
+  report:
+    description: Report a player.
+    usage: /report <player> <reason>
+    permission: shn.report
+  shout:
+    description: Shout something.
+    usage: /shout <message>
+    permission: shn.shout
+  bug:
+    description: File a bug report.
+    usage: /bug <description>
+    permission: shn.bug
