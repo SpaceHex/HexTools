@@ -1,6 +1,6 @@
-name: AdminTools
-main: net.spacegeek224.AdminTools.Main
-version: 0.0.5
+name: HexTools
+main: net.spacegeek224.hextools.HexTools
+version: 0.0.1
 author: spacegeek224
 commands:
   help:
