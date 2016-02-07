@@ -1,4 +1,4 @@
-package net.spacegeek224.AdminTools;
+package net.spacegeek224.hextools;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
