@@ -1,4 +1,4 @@
-package net.spacegeek224.AdminTools;
+package net.spacegeek224.hextools;
 
 import java.util.Arrays;
 
