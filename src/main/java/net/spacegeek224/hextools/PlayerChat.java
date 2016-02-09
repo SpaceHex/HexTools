@@ -37,7 +37,7 @@ public class PlayerChat implements Listener {
   if (player.hasPermission("hex.chat.normal")) {
      Bukkit.broadcastMessage(ChatColor.YELLOW + player.getDisplayName() + ": " + ChatColor.WHITE + new ColoredString(msg).res);
    } else {
-     Bukkit.broadcastMessage(ChatColor.WHITE + player.getDisplayName() + ": " + ChatColor.GRAY + msg);
+     Bukkit.broadcastMessage(ChatColor.GRAY + player.getDisplayName() + ": " + ChatColor.GRAY + msg);
    }
    
   }

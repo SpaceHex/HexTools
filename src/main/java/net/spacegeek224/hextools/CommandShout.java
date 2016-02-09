@@ -18,7 +18,7 @@ public class CommandShout implements CommandExecutor {
                 if (sender instanceof ConsoleCommandSender) {
                         name = ChatColor.RED + "CONSOLE: ";
                 } else if (sender instanceof Player) {
-                        name = ChatColor.BLUE + ((Player) sender).getDisplayName() + ": ";
+                        name = ChatColor.YELLOW + ((Player) sender).getDisplayName() + ": ";
                 }
                 if (args.length == 0) {
 	                
@@ -27,7 +27,7 @@ public class CommandShout implements CommandExecutor {
 			for (int i = 0; i < args.length; i++) {
 				buffer.append(' ').append(args[i]);
 			}
-			Bukkit.broadcastMessage(name + new ColoredString(buffer.toString()).res);
+			Bukkit.broadcastMessage(new ColoredString("&7[&cSHOUT&7]: ").res + name + ChatColor.RESET + new ColoredString(buffer.toString()).res);
                 }
                 return true;                                                                                            
         }
