@@ -22,7 +22,7 @@ public class PlayerChat implements Listener {
   public void onPlayerChat(AsyncPlayerChatEvent event) {
     String msg = event.getMessage();
     Player player = event.getPlayer();
-    String[] swearWords = {"fuck","ass","bitch"};
+    String[] swearWords = {"fuck","ass","bitch","cock","penis","vagina"};
     String message = event.getMessage().toLowerCase().replaceAll("@", "a").replaceAll("\\p{Punct}", " ");
     for(String word : swearWords){
       if(message.matches("(.* )?"+word+"( .*)?")) {
@@ -34,10 +34,10 @@ public class PlayerChat implements Listener {
     }
    event.setCancelled(true);
 
-  if (player.hasPermission("rank.admin")) {
-     Bukkit.broadcastMessage(ChatColor.RED + player.getDisplayName() + ": " + ChatColor.WHITE + msg);
+  if (player.hasPermission("hex.chat.normal")) {
+     Bukkit.broadcastMessage(ChatColor.YELLOW + player.getDisplayName() + ": " + ChatColor.WHITE + new ColoredString(msg).res);
    } else {
-     Bukkit.broadcastMessage(ChatColor.WHITE + player.getDisplayName() + ": " + ChatColor.GRAY + new ColoredString(msg).res);
+     Bukkit.broadcastMessage(ChatColor.WHITE + player.getDisplayName() + ": " + ChatColor.GRAY + msg);
    }
    
   }
