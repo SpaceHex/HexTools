@@ -29,6 +29,7 @@ public class HexTools extends JavaPlugin implements Listener {
 		getCommand("report").setExecutor(new CommandReport()); 
 		getCommand("bug").setExecutor(new CommandBug());
 		getCommand("shout").setExecutor(new CommandShout());
+		getCommand("me").setExecutor(new CommandMe());
 	}
 	
 	@Override
